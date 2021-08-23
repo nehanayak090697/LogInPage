@@ -3,7 +3,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    
 } from "react-router-dom"
 import Registration from "../components/Registration"
 export default class Auth extends Component {

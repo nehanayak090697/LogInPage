@@ -1,24 +1,28 @@
 import React from 'react';
-import Auth from "./components/Auth"
+//import Auth from "./components/Auth"
 import Registration from "./components/Registration"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
+import ContactUs from './components/ContactUs';
+ import {
+ BrowserRouter as Router,
+ Switch,
+ Route,
   Link
 } from "react-router-dom"
+
 
 function App() {
   return (
     <>
-      <Router>
-        <Link to="/Registration">Registration</Link><br />
-        <Link to="/">Login</Link>
+      {
+         <Router>
+        
+        
         <Switch>
-          <Route exact path="/" component={Auth} />
+          <Route exact path="/" component={ContactUs} />
           <Route path="/Registration" component={Registration} />
         </Switch>
-      </Router>
+      </Router> }
+      
     </>
 
   );
